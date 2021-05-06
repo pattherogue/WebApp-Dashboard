@@ -98,7 +98,6 @@ header img {
 
 /* Navigation */
 .nav-bar-container {
-    
     grid-area: navigation;
     display: grid;
     align-content: center;
@@ -108,18 +107,41 @@ header img {
     height: 50px;
     background-color: purple;
     fill: white;
-    
 }
 
 .nav-icon {
-    
     height: 30px;
     width: 30px;
     padding: 5px;
     margin: 5px;
     fill: white
-    
 }
+
+/* Main */
+.main-header {
+    display: flex;
+}
+
+.dashboard-headline {
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    padding-right: 1.5em;
+    margin-top: 0.8em;
+}
+
+.main-header-search {
+    padding-top: 0.9em;
+    padding-left: 1em;
+    padding-bottom: 0.9em;
+}
+
+/* Alert Banner */
+.alert {
+  
+}
+
+/* Traffic Line Graph */
+
 
 
 
