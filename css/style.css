@@ -144,7 +144,8 @@ header img {
 .traffic,
 .daily,
 .mobile,
-.social-stats-container {
+.social-stats-container,
+.members {
     margin: 10px 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid lightgray;
@@ -153,7 +154,8 @@ header img {
 .traffic-header h3,
 .daily-header h3,
 .mobile-header h3,
-.social-stats-container h3 {
+.social-stats-container h3,
+.members h3 {
     font-size: small;
     font-weight: bold;
     padding-left: 1.6em;
@@ -228,6 +230,47 @@ header img {
     height: 20px;
   }
 
+/* Members */
+
+
+.members-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid rgba(94, 93, 93, 0.5);
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.members-image img {
+    height: 65px;
+    border-radius: 50%;
+}
+
+.members-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 6px;
+}
+
+.members-text p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.members-text a {
+    font-size: 10px;
+    padding-top: 4px;
+    text-decoration: none;
+}
+
+.members-date {
+    margin-top: 8px;
+    font-size: 13px;
+    
+}
 
 
 
