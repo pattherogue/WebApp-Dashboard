@@ -137,11 +137,96 @@ header img {
 
 /* Alert Banner */
 .alert {
-  
+    
 }
 
-/* Traffic Line Graph */
+/* Traffic Line Graph + Daily Traffic Bar Graph */
+.traffic,
+.daily,
+.mobile,
+.social-stats-container {
+    margin: 10px 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid lightgray;
+}
 
+.traffic-header h3,
+.daily-header h3,
+.mobile-header h3,
+.social-stats-container h3 {
+    font-size: small;
+    font-weight: bold;
+    padding-left: 1.6em;
+}
+
+.traffic-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 4em 0 1.5em;
+}
+
+.widget-container-full, .widget-container-half {
+    width: 95vw;
+}
+
+/* Social */
+.social-stats {
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    max-width: 98%;
+  }
+  
+  .social-image {
+    width: 30px;
+    margin-right: 10px;
+  }
+  .social-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-container {
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    margin: 8px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    min-width: 180px;
+    width: 100%;
+  }
+  
+  .social-text p:first-child {
+    color: #857ee7;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .social-text p:last-child {
+    font-size: 35px;
+    color: gray;
+    font-weight: 200;
+  }
+  
+  .social-image {
+    background-color: #857ee7;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .outer {
+    fill: white;
+    width: 20px;
+    height: 20px;
+  }
 
 
 
