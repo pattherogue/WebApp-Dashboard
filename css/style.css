@@ -145,7 +145,8 @@ header img {
 .daily,
 .mobile,
 .social-stats-container,
-.members {
+.members,
+.recent-activity {
     margin: 10px 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid lightgray;
@@ -155,7 +156,8 @@ header img {
 .daily-header h3,
 .mobile-header h3,
 .social-stats-container h3,
-.members h3 {
+.members h3,
+.recent-activity h3 {
     font-size: small;
     font-weight: bold;
     padding-left: 1.6em;
@@ -231,16 +233,19 @@ header img {
   }
 
 /* Members */
-
-
 .members-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border-bottom: 1px solid rgba(94, 93, 93, 0.5);
+    border-bottom: 1px solid lightgray;
     margin-top: 15px;
     padding-bottom: 15px;
+}
+
+.members-container:last-child,
+.recent-activity:last-child {
+    border-bottom: none;
 }
 
 .members-image img {
@@ -269,9 +274,45 @@ header img {
 .members-date {
     margin-top: 8px;
     font-size: 13px;
-    
 }
 
+/* Recent Activity */
+.recent-activity {
+    margin: 15px 10px;
+}
+
+.recent-activity-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(94, 93, 93, 0.5);
+    padding-bottom: 15px;
+    margin-top: 15px;
+}
+
+.recent-img img {
+    height: 56px;
+    border-radius: 50%;
+}
+
+.recent-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    padding-left: 6px;
+    width: 80%;
+    text-align: center;
+
+}
+
+.recent-text p:nth-of-type(1) {
+    font-size: 13px;
+}
+
+.recent-text p:nth-of-type(2) {
+    font-size: 10px;
+    padding-top: 4px;
+}
 
 
 
