@@ -273,6 +273,39 @@
 
         </section>
 
+        <!-- Settings -->
+        <section class="settings">
+            <h3>Settings</h3>
+            <!-- Toggle Switch -->
+            <label class="switch">
+                <span class="label-text">Send Email Notifications</span>
+                <input class="checkbox">
+                <span class="slider"></span>
+            </label>
+
+            <label class="switch">
+                <span class="label-text">Set Profile to Public</span>
+                <input class="checkbox">
+                <span class="slider"></span>
+            </label>
+
+            <!-- Timezones -->
+            <select id="timezone" class="form-field">
+                <option disabled selected>Select a Timezone</option>
+                <option>Eastern</option>
+                <option>Central</option>
+                <option>Mountain</option>
+                <option>Pacific</option>
+            </select>
+
+            <!-- Buttons -->
+            <div class="settings-button">
+                <button class="button-primary" id="save">Save</button>
+                <button class="button-disabled" id="cancel">Cancel</button>
+            </div>
+
+        </section>
+
      
     </main>
 </body>
