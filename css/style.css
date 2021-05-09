@@ -147,7 +147,8 @@ header img {
 .social-stats-container,
 .members,
 .recent-activity,
-.message-user {
+.message-user,
+.settings {
     margin: 10px 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid lightgray;
@@ -159,7 +160,8 @@ header img {
 .social-stats-container h3,
 .members h3,
 .recent-activity h3,
-.message-user h3 {
+.message-user h3,
+.settings h3 {
     font-size: small;
     font-weight: bold;
     padding-left: 1.6em;
@@ -364,10 +366,13 @@ textarea {
 }
 
 /* Settings */
-.settings {
+.settings-container {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
+    
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    margin-bottom: 15px;
 }
 
 /* Toggle Swtich */
@@ -443,9 +448,9 @@ textarea {
   #timezone {
     padding: 15px;
     border-radius: 10px;
-    background-color: rgb(245, 245, 245);
-    color: rgb(173, 173, 173);
-    border: solid 2px rgb(173, 173, 173);
+    background-color: #F5F5F5;
+    color: #ADADAD;
+    border: solid 2px #F5F5F5;
     margin: 20px 0;
   }
 
@@ -457,6 +462,7 @@ textarea {
     .settings-button {
       display: inline-flex;
       gap: 20px;
+    
   }
 
   #save, 
@@ -473,7 +479,7 @@ textarea {
   }
 
   #cancel {
-      background-color: rgb(155, 155, 155);
+      background-color: #9B9B9B;
   }
 
 
