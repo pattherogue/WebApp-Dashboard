@@ -136,10 +136,6 @@ header img {
 }
 
 /* Alert Banner */
-.alert {
-    
-}
-
 .alertBox1 {
     position: absolute;
     width: 150px;
@@ -149,13 +145,13 @@ header img {
     /* font-size: 7px; */
     font-size: 10px;
     margin-bottom: 3px;
-  }
+}
 
-  p.alertBox1-close {
+p.alertBox1-close {
     margin-left: 5px;
-  }
+}
 
-  .alert-banner {
+.alert-banner {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -167,7 +163,7 @@ header img {
     color: white;
     margin-left: 20px;
     padding: 5px;
-  }
+}
 
 
 /* Traffic Line Graph + Daily Traffic Bar Graph */
