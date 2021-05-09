@@ -140,6 +140,36 @@ header img {
     
 }
 
+.alertBox1 {
+    position: absolute;
+    width: 150px;
+    /* width: 155px; */
+    top: 30px;
+    z-index: 1;
+    /* font-size: 7px; */
+    font-size: 10px;
+    margin-bottom: 3px;
+  }
+
+  p.alertBox1-close {
+    margin-left: 5px;
+  }
+
+  .alert-banner {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    background-color: mediumpurple;
+    color: white;
+    margin-left: 20px;
+    padding: 5px;
+  }
+
+
 /* Traffic Line Graph + Daily Traffic Bar Graph */
 .traffic,
 .daily,
