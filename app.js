@@ -14,7 +14,7 @@ alertBanner.innerHTML =
      }
  });
 
- /*Traffic Data */
+ /* Line Graph */
  let trafficCanvas = document.getElementById('traffic-chart').getContext('2d');
  
  let trafficData = {
@@ -51,3 +51,35 @@ let trafficChart = new Chart(trafficCanvas, {
     options: trafficOptions,
 });
 
+/* Bar Chart */
+const dailyCanvas = document.getElementById('daily-chart');
+
+let dailyData = {
+    labels: ["S", "M", "T", "W", "T", "F", "S"],
+    datasets: [{
+        Label: '# of Hits',
+        data: [75, 115, 175, 125, 225, 200, 100],
+        backgroundColor: '#7477BF',
+        borderWidth: 1,
+    }]
+};
+
+const dailyOptions = {
+    scales: {
+        y: {
+            beginAtZero: true
+        }
+    },
+    plugins: {
+        legend: {
+        display: false
+        }
+    }
+};
+
+let dailyChart = new Chart(dailyCanvas, {
+    type: 'bar',
+    data: dailyData,
+    options: dailyOptions
+
+});
