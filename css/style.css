@@ -396,8 +396,7 @@ textarea {
     display: flex;
     flex-direction: column;
     
-    padding-left: 1.6em;
-    padding-right: 1.6em;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -407,7 +406,7 @@ textarea {
     display: inline-block;
     width: 60px;
     height: 34px;
-    margin: 20px 0;
+    
   }
 
   .switch .label-text {
