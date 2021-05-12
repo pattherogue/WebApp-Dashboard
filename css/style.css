@@ -535,6 +535,132 @@ textarea {
   }
 
 
+  /* Media Queries*/
+  @media (min-width: 768px) {
+    .grid-container {
+      grid-template-columns: 55px 1fr;
+      grid-template-areas:
+        "header header"
+        "navigation main";
+    }
+  
+    h1 {
+      font-size: 26px;
+      margin-left: 15px;
+    }
+  
+    h3 {
+      font-size: 14px;
+    }
+  
+    .name {
+      font-size: 21px;
+    }
+  
+    .nav-bar-container {
+      grid-template-columns: 1fr;
+      align-content: flex-start;
+      height: 100%;
+    }
+  
+    .nav-icon {
+      padding: 0px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    .main {
+      display: grid;
+      grid-template-columns: 50%;
+    }
+  
+    .main-header {
+      grid-column: 1 / span 2;
+    }
+  
+    #alert {
+      grid-column: 1 / span 2;
+      margin: 15px;
+    }
+  
+    .traffic-nav {
+      justify-content: flex-end;
+    }
+  
+    .traffic-nav li {
+      margin: 0 20px;
+    }
+  
+    .social-stats-container {
+      flex-direction: row;
+      flex-basis: 33.3%;
+      width: 100%;
+    }
+  
+    .social-wrapper {
+      padding: 5px;
+      justify-content: center;
+    }
+  
+    /* Traffic data graph */
+    .traffic,
+    .social-stats-container {
+      grid-column: 1 / span 2;
+      border-bottom: 1px solid #d2d2d2;
+    }
+  
+    .social-stats-container {
+      border-top: 1px solid #d2d2d2;
+      padding-bottom: 15px;
+    }
+  
+    /* New Members Section */
+    .daily,
+    .members,
+    .message {
+      grid-column: 1 / span 1;
+    }
+  
+    /*Recent Activity Section */
+    .mobile,
+    .activity,
+    .settings {
+      grid-column: 2 / span 1;
+      border-left: 1px solid #d2d2d2;
+    }
+  
+    .widget-container-full {
+      width: 90vw;
+    }
+  
+    #daily-chart {
+      padding: 8px;
+    }
+  
+    .widget-container-half {
+      width: 45vw;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .main {
+      display: grid;
+    }
+  
+    .main {
+      grid-template-columns: 50%;
+    }
+  
+    .widget-container-full {
+      width: 90vw;
+    }
+  
+    .widget-container-half {
+      width: 45vw;
+    }
+  }
+
+
 
 
 
