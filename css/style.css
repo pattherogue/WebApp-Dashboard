@@ -194,6 +194,7 @@ header img {
     }
   }
 
+  /*
 .alert-banner {
     display: flex;
     margin-top: 20px;
@@ -207,6 +208,35 @@ header img {
     margin-left: 20px;
     padding: 5px;
 }
+*/
+
+
+.alert-banner {
+    background-color: rgb(133, 126, 231);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 200;
+    border-radius: 6px;
+    height: 45px;
+    width: 85%;
+  }
+  
+  .alert-banner p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .alert-banner-close {
+    cursor: pointer;
+  }
+  
+  .alert-banner-close:hover {
+    transform: scale(1.3);
+  }
 
 
 /* Traffic Line Graph + Daily Traffic Bar Graph */
