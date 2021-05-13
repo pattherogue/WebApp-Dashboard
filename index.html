@@ -88,7 +88,7 @@
         </section>
 
         <!-- Daily Traffic Bar Graph -->
-        <section class="daily">
+        <section class="daily" id="bar-chart">
                 <h3>DAILY TRAFFIC</h3>
                 <div class="widget-container-half">
                     <!-- Bar Graph -->
@@ -97,16 +97,13 @@
         </section>
 
         <!-- Mobile Users Pie Graph -->
-        <section class="mobile">
-                <h3>MOBILE USERS</h3>
-                <div class="split-widget"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
-                <canvas id="mobile-chart" class="chartjs-render-monitor" height="50" width="281"></canvas>
-                </div>
-                <!--<div class="widget-container-half">
-                   
-                    <canvas id="mobile-chart"></canvas>
-                </div> -->
-        </section>
+        <section class="mobile container">
+            <h3>MOBILE USERS</h3>
+            <div class="widget-container-half">
+              <!-- element doghnut will attach to -->
+              <canvas id='mobile-chart'></canvas>
+            </div>
+          </section>
 
         <!-- Social Stats -->
         <section class="social-stats-container">
@@ -153,7 +150,7 @@
         </section>
 
         <!-- New Members -->
-        <section class="members">
+        <section class="members" id="members">
             <h3>NEW MEMBERS</h3>
 
             <div class="members-container">
@@ -271,21 +268,29 @@
         </section>
 
         <!-- Settings -->
-        <section class="settings">
+        <section class="settings" id="settings">
             <h3>SETTINGS</h3>
                 <div class="settings-container">
-                    <!-- Toggle Switch -->
-                    <label class="switch">
-                        <span class="label-text">Send Email Notifications</span>
-                        <input class="checkbox">
-                        <span class="slider"></span>
-                    </label>
 
-                    <label class="switch">
-                        <span class="label-text">Set Profile to Public</span>
-                        <input class="checkbox">
-                        <span class="slider"></span>
-                    </label>
+                    <div class="toggle-container container">
+                        <div class="toggle2-container">
+                          <p>Send Email Notifications</p>
+                          <div class="toggle3-container">    
+                            <input type="checkbox" id="toggle" class="checkbox" />
+                            <label for="toggle" class="onBtn">ON</label>
+                            <label for="toggle" class="offBtn">OFF</label>
+                          </div>
+                        </div>
+                          <br>
+                          <div class="toggle2-container">
+                          <p>Set Profile to Public</p>
+                          <div class="toggle3-container">              
+                            <input type="checkbox" id="toggle2" class="checkbox" />  
+                            <label for="toggle" class="onBtn">ON</label>           
+                            <label for="toggle" class="offBtn">OFF</label>           
+                          </div>
+                          </div>
+                        </div>
 
                     <!-- Timezones -->
                     <select id="timezone" class="form-field">
@@ -301,6 +306,7 @@
                         <button class="button-primary" id="save">Save</button>
                         <button class="button-disabled" id="cancel">Cancel</button>
                     </div>
+
                 </div>
         </section>
 

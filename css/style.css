@@ -32,62 +32,62 @@ main {
     font-weight: 500;
   }
   
-  .light {
+.light {
     font-weight: 300;
-  }
-  .trade {
+}
+.trade {
     font-size: 24px;
     font-weight: 200;
-  }  
+}  
 
 /* Header */
-  header {
+header {
     grid-area: header;
     background-color:  rgb(133, 126, 231);
     color: white;
-  }
+}
   
-  header h1 {
+header h1 {
     font-size: 20px;
-  }
+}
   
-  .header-container {
+.header-container {
     display: flex;
     align-items: center;
     padding: 8px;
     justify-content: space-around;
-  }
+}
   
-  .bell-icon-container {
+.bell-icon-container {
     margin-left: auto;
     margin-right: 10px;
     display: flex;
     justify-content: center;
     justify-content: space-around;
-  }
+}
   
-  .bell-icon {
+.bell-icon {
     width: 30px;
     fill: white;
-  }
+}
   
-  .circle {
+.circle {
     background-color: rgb(118, 201, 118);
     position: relative;
     width: 7px;
     height: 7px;
     border-radius: 50%;
     cursor: pointer;
-  }
+}
   
-  .bell-icon:hover {
+.bell-icon:hover {
     transform-origin: left-right;
     transform-box: fill-box;
     animation: spin 0.2s cubic-bezier(0.6, 0, 0.6, 1);
     animation-iteration-count: 10;
-  }
+}
 
-  @keyframes spin {
+@keyframes spin {
     25% {
       transform: rotate(9deg);
     }
@@ -101,36 +101,31 @@ main {
     }
 }
 
-  
-  header img {
+header img {
     width: 40px;
     border-radius: 50%;
     position: relative;
     margin-right: 5px;
-  }
+}
   
-  .vertical {
+.vertical {
     border-left: 1px solid rgb(190, 188, 188);
     height: 40px;
     margin-right: 10px;
-  }
+}
   
-  .header-student {
+.header-student {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
   
-  .header-student p {
+.header-student p {
     font-size: 13px;
-  }
-
-
-
-
-
+}
 
 /* Navigation */
+
 .nav-bar-container {
     grid-area: navigation;
     display: grid;
@@ -217,7 +212,7 @@ main {
 /* Traffic Line Graph + Daily Traffic Bar Graph */
 .traffic,
 .daily,
-.mobile,
+.mobile-container,
 .social-stats-container,
 .members,
 .recent-activity,
@@ -256,6 +251,10 @@ main {
 .split-widget {
     align-self: center;
   }
+
+.mobile-chart {
+    max-width: 200px;
+}
 
 /* Social */
 .social-stats {
@@ -451,6 +450,7 @@ textarea {
 }
 
 /* Toggle Swtich */
+/*
 .switch {
     position: relative;
     display: inline-block;
@@ -463,6 +463,82 @@ textarea {
       display: inline-block;
       width: 300px;
   }
+  */
+  input[type="checkbox"] {
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(243, 242, 242);
+    -webkit-appearance: none;
+    border-radius: 20px;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+    border: 2px solid rgb(69, 65, 121);
+  }
+  
+  input:checked[type="checkbox"] {
+    background: rgb(133, 126, 231);
+    border: 2px solid rgb(172, 167, 167);
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]::before {
+    z-index: 2;
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 28px;
+    height: 28px;
+    margin-left: 4px;
+    margin-top: 2px;
+    background: #fff;
+    border: 2px solid rgb(172, 167, 167);
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  input:checked[type="checkbox"]::before {
+    left: 56px;
+  }
+  
+  select {
+    color: rgb(185, 184, 184);
+  }
+
+  .toggle-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .toggle2-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .toggle3-container {
+    position: relative;
+    display: inline;
+  }
+  
+  label[for="toggle"] {
+    position: absolute;
+    font-weight: 200;
+    font-size: 15px;
+  }
+  
+  .onBtn {
+    bottom: 15px;
+    left: 10px;
+    color: white;
+  }
+  
+  .offBtn {
+    bottom: 15px;
+    left: 64px;
+    color: gray;
+  }
+  
   
   /* Hide default HTML checkbox */
   .switch input {
