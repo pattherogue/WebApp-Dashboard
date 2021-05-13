@@ -6,13 +6,14 @@
 
 .grid-container {
     display: grid;
+    height: 100vh;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: 
-        "header"
-        "navigation"
-        "main";
-}
+    grid-template-areas:
+      "header"
+      "navigation"
+      "main";
+  }
 
 /* Font */
 .strong {
@@ -209,7 +210,7 @@ header img {
 
 .traffic-header h3,
 .daily-header h3,
-.mobile-header h3,
+.mobile h3,
 .social-stats-container h3,
 .members h3,
 .recent-activity h3,
@@ -231,6 +232,10 @@ header img {
 .widget-container-full, .widget-container-half {
     width: 95vw;
 }
+
+.split-widget {
+    align-self: center;
+  }
 
 /* Social */
 .social-stats {
@@ -304,8 +309,6 @@ header img {
 .members-container:last-child {
     border-bottom: none;
 }
-
-
 
 .members-image img {
     height: 65px;
@@ -591,13 +594,13 @@ textarea {
       margin: 0 20px;
     }
   
-    .social-stats-container {
+    .social-wrapper {
       flex-direction: row;
       flex-basis: 33.3%;
       width: 100%;
     }
   
-    .social-wrapper {
+    .social-container {
       padding: 5px;
       justify-content: center;
     }
@@ -617,13 +620,13 @@ textarea {
     /* New Members Section */
     .daily,
     .members,
-    .message {
+    .message-user {
       grid-column: 1 / span 1;
     }
   
     /*Recent Activity Section */
     .mobile,
-    .activity,
+    .recent-activity,
     .settings {
       grid-column: 2 / span 1;
       border-left: 1px solid #d2d2d2;
@@ -645,9 +648,6 @@ textarea {
   @media (min-width: 1024px) {
     .main {
       display: grid;
-    }
-  
-    .main {
       grid-template-columns: 50%;
     }
   

@@ -57,7 +57,7 @@
     </nav>
 
     <!-- Main -->
-    <main>
+    <main class="main">
         <div class="main-header">
             <h2 class="dashboard-headline">Dashboard</h2>
             <!-- Step 6 -->
@@ -73,7 +73,7 @@
             <!-- Insert Javascript -->
         </div>
         <!-- Traffic Line Graph -->
-        <section class="traffic">
+        <section class="traffic" id="dashboard">
             <div class="traffic-header">
                 <h3>TRAFFIC</h3>
                 <ul class="traffic-nav">
@@ -82,10 +82,11 @@
                     <li class="traffic-nav-link">Weekly</li>
                     <li class="traffic-nav-link">Monthly</li>
                 </ul>
-                <div class="widget-container-full">
+            </div>
+
+            <div class="widget-container-full">
                     <!-- Line Graph -->
                     <canvas id="traffic-chart"></canvas>
-                </div>
             </div>
         </section>
 
@@ -102,13 +103,14 @@
 
         <!-- Mobile Users Pie Graph -->
         <section class="mobile">
-            <div class="mobile-header">
                 <h3>MOBILE USERS</h3>
-                <div class="widget-container-half">
-                    <!-- Pie Graph -->
-                    <canvas id="mobile-chart"></canvas>
+                <div class="split-widget"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                <canvas id="mobile-chart" class="chartjs-render-monitor" height="50" width="281"></canvas>
                 </div>
-            </div>
+                <!--<div class="widget-container-half">
+                   
+                    <canvas id="mobile-chart"></canvas>
+                </div> -->
         </section>
 
         <!-- Social Stats -->
