@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 100%;
@@ -13,27 +14,33 @@
       "main";
   }
   
-  header {
+header {
     grid-area: header;
-  }
+}
   
-  nav {
+nav {
     grid-area: navigation;
-  }
+}
   
-  main {
+main {
     grid-area: main;
     display: grid;
+}
+
+/* Font */
+.bold {
+    font-weight: 500;
   }
   
-  body {
-    background-color: white;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    color: #666666;
-    letter-spacing: 1px;
-    width: 100%;
+  .light {
+    font-weight: 300;
   }
+  .trade {
+    font-size: 24px;
+    font-weight: 200;
+  }  
+
+/* Header */
   header {
     grid-area: header;
     background-color:  rgb(133, 126, 231);
@@ -41,7 +48,7 @@
   }
   
   header h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   
   .header-container {
@@ -74,9 +81,26 @@
   }
   
   .bell-icon:hover {
-    transform: scale(1.1);
-    transition: 0.3s ease-out;
+    transform-origin: left-right;
+    transform-box: fill-box;
+    animation: spin 0.2s cubic-bezier(0.6, 0, 0.6, 1);
+    animation-iteration-count: 10;
   }
+
+  @keyframes spin {
+    25% {
+      transform: rotate(9deg);
+    }
+  
+    25% {
+      transform: rotate(-12deg);
+    }
+  
+    100% {
+      transform: rotate(12deg);
+    }
+}
+
   
   header img {
     width: 40px;
