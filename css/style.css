@@ -731,31 +731,12 @@ textarea {
     }
   
     /* New Members Section */
-  /*
-    .daily,
-    .members,
-    .message-user {
-      grid-column: 1 / span 2;
-    }
-    
-    .mobile,
-    .recent-activity,
-    .settings {
-      grid-column: 2 / span 1;
-      border-left: 1px solid #d2d2d2;
-    } 
-    */
-
-    
-  
     .members,
     .recent-activity,
     .message-user,
     .settings {
       grid-column: 1 / 3;
     }
-
-   
 
     .members-container,
     .recent-activity-container {
@@ -791,15 +772,6 @@ textarea {
         color: rgb(167, 163, 163);
     }
 
-
-
-
-
-
-
-
-
-  
     .widget-container-full {
       width: 90vw;
     }
@@ -810,6 +782,11 @@ textarea {
   
     .widget-container-half {
       width: 45vw;
+    }
+
+    
+    .toggle2-container {
+        width: 50%;
     }
   }
   
