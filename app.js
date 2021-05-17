@@ -99,15 +99,19 @@ let mobileData = {
       ]
   }]
 };
+
 const mobileOptions = {
-  legend: {
-      position: 'right',
-      labels: {
-          boxWidth: 20,
-          fontStyle: 'bold'
+  plugins: {
+      legend: {
+          position: 'right',
+          labels: {
+              boxWidth: 20,
+              fontStyle: 'bold',
+          }
       }
   }
-}
+};
+
 let mobileChart = new Chart(mobileCanvas, {
   type: 'doughnut',
   data: mobileData,

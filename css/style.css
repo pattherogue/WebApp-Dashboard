@@ -374,9 +374,6 @@ header img {
     display: none;
 }
 /* Recent Activity */
-.recent-activity {
-    margin: 15px 10px;
-}
 
 .recent-activity-container {
     display: flex;
@@ -385,6 +382,7 @@ header img {
     border-bottom: 1px solid lightgray;
     padding-bottom: 15px;
     margin-top: 15px;
+    padding-left: 15px;
 }
 
 .recent-activity-container:last-child {
@@ -733,6 +731,7 @@ textarea {
         font-size: 17px;
         align-items: center;
         padding-bottom: 20px;
+        height: auto;
       }
     
       .members-text,
