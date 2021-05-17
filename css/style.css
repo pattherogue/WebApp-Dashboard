@@ -225,7 +225,7 @@ header img {
 /* Traffic Line Graph + Daily Traffic Bar Graph */
 .traffic,
 .daily,
-.mobile-container,
+.mobile,
 .social-stats-container,
 .members,
 .recent-activity,
@@ -234,6 +234,15 @@ header img {
     margin: 10px 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid lightgray;
+}
+
+
+
+#mobile-chart {
+  padding-left: 16px;
+  margin-top: -32px;
+  margin-bottom: -32px;
+  margin-right: 16px; 
 }
 
 .traffic-header h3,
@@ -787,6 +796,7 @@ textarea {
     .recent-activity,
     .members-container {
       padding-bottom: 2px;
+      height: auto;
     }
 
     .settings {
