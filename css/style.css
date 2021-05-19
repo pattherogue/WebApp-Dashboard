@@ -231,7 +231,7 @@ header img {
 .recent-activity,
 .message-user,
 .settings {
-    margin: 10px 10px;
+    margin: 10px 0;
     padding-bottom: 10px;
     border-bottom: 2px solid lightgray;
 }
@@ -795,7 +795,6 @@ textarea {
   
     .recent-activity,
     .members-container {
-      padding-bottom: 2px;
       height: auto;
     }
 
